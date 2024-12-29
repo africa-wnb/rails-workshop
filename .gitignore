@@ -1,36 +1,45 @@
-# Ignore Ruby configuration and generated files
 *.rbc
-.rspec
-.rvmrc
-.bundle
-
-# Ignore Capybara and pickle-generated files
 capybara-*.html
-pickle-email-*.html
-
-# Ignore SQLite3 databases and related files
+.rspec
 /db/*.sqlite3
 /db/*.sqlite3-journal
 /db/*.sqlite3-[0-9]*
+/public/system
+/coverage/
+/spec/tmp
+*.orig
+rerun.txt
+pickle-email-*.html
 
-# Ignore logs and temporary files
+# Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
 
-# Ignore secret and configuration files
+# TODO Comment out this rule if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
 config/master.key
+
+# Only include if you have production secrets in this file, which is no longer a Rails default
+# config/secrets.yml
+
+# dotenv, dotenv-rails
+# TODO Comment out these rules if environment variables can be committed
 .env
 .env*.local
-.env*.erb
 
-# Ignore environment normalization files
-/vendor/bundle
+## Environment normalization:
 /.bundle
+/vendor/bundle
 
-# Ignore bower files if using bower-rails
+# these should all be checked in to normalize the environment:
+# Gemfile.lock, .ruby-version, .ruby-gemset
+
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
+
+# if using bower-rails ignore default bower_components path bower.json files
 /vendor/assets/bower_components
 *.bowerrc
 bower.json
@@ -38,35 +47,23 @@ bower.json
 # Ignore pow environment settings
 .powenv
 
-# Ignore Byebug command history file
+# Ignore Byebug command history file.
 .byebug_history
 
-# Ignore node modules and yarn files
+# Ignore node_modules
 node_modules/
-yarn-error.log
-yarn-debug.log*
-.yarn-integrity
 
-# Ignore precompiled JavaScript packs and assets
+# Ignore precompiled javascript packs
 /public/packs
 /public/packs-test
 /public/assets
 
+# Ignore yarn files
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
-/public/uploads
-
-# Ignore pidfiles, but keep the directory
-/tmp/pids/*
-!/tmp/pids/
-!/tmp/pids/.keep
-
-# Ignore storage (uploaded files in development and any SQLite databases)
-.tmp/storage/*
-!/tmp/storage/
-!/tmp/storage/.keep
-
-# Ignore app assets builds
-/app/assets/builds/*
-!/app/assets/builds/.keep
+/public/uploadsq
