@@ -20,3 +20,5 @@ gem "puma", ">= 5.0"
 
 # Speed up boot time by caching expensive operations
 gem 'bootsnap', '>= 1.4.4', require: false
+
+gem 'importmap-rails'
