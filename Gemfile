@@ -9,8 +9,8 @@ gem "rails", "~> 7.1.5", ">= 7.1.5.1"
 gem "sprockets-rails"
 gem 'dartsass-sprockets', '~> 3.1.0'
 
-# Use sqlite3 as the database for Active Record
-gem "sqlite3", ">= 1.4"
+# Use pg as the database for Active Record
+gem "pg", "~> 1.1"
 
 gem 'bootstrap', '~> 5.3.0'
 gem 'popper_js', '~> 2.11'
