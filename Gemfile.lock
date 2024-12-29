@@ -267,6 +267,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  autoprefixer-rails (~> 10.4)
   bootsnap (>= 1.4.4)
   bootstrap (~> 5.3.0)
   dartsass-sprockets (~> 3.1.0)
