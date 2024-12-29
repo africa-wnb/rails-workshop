@@ -1,0 +1,92 @@
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons";
+
+h1 {
+  color: #d3360b !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: semi-bold;
+}
+
+h2,
+h5 {
+  font-weight: bold;
+}
+
+.navbar-brand {
+  color: #d3360b !important;
+  font-weight: bold; /* Optional for emphasis */
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar-brand:hover {
+  color: #d60043; /* Optional: Slightly darker color on hover */
+}
+
+#navbarNav {
+  align-items: flex-end; /* Align items to the top */
+}
+
+.navbar-toggler {
+  border: 2px solid #d3360b; /* Primary color for the border */
+  background-color: transparent; /* No background initially */
+  outline: none; /* Remove focus outlines */
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.navbar-toggler:hover {
+  background-color: #d3360b; /* Your primary color on hover */
+  border-color: #d3360b; /* Match border to background */
+}
+
+.navbar-toggler:focus {
+  background-color: #d3360b; /* Ensure focus color matches hover */
+  border-color: #d3360b;
+  box-shadow: 0 0 5px rgba(211, 54, 11, 0.6); /* Optional glow effect */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23d3360b' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  transition: background-color 0.3s ease; /* Smooth icon color change */
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.btn-primary {
+  background-color: #d3360b;
+  border: #d3360b;
+}
+
+.btn-primary:hover {
+  background-color: #bfbcbb !important; /* Change the background color on hover */
+  color: #000000 !important; /* Change the text color on hover */
+}
+
+.btn {
+  border: none;
+}
+
+a {
+  color: #d3360b;
+}
+
+.accordion .accordion-item .accordion-button {
+  background-color: #bfbcbb !important;
+  color: #000000 !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #bfbcbb !important; /* Darker shade of primary color for expanded state */
+  color: #000000 !important; /* Ensure consistency with text color */
+}
+
+.accordion-button:hover {
+  background-color: #d3360b; /* Darker shade of primary color for expanded state */
+  color: #ffffff; /* Ensure consistency with text color */
+}
+
+.accordion-button:hover {
+  background-color: #d3360b; /* Darker shade of primary color for expanded state */
+  color: #ffffff; /* Ensure consistency with text color */
+}
