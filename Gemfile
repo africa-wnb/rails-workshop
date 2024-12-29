@@ -17,3 +17,6 @@ gem 'popper_js', '~> 2.11'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
+
+# Speed up boot time by caching expensive operations
+gem 'bootsnap', '>= 1.4.4', require: false
