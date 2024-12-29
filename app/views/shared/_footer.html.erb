@@ -1,15 +1,19 @@
 <footer class="bg-light text-center mt-5">
     <p class="pt-4">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#privacyPolicy">
+        <a href="#" class="text-danger" data-bs-toggle="modal" data-bs-target="#privacyPolicy">
             Privacy Policy
-        </button>
-        
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#codeOfConduct">
+        </a>
+        |
+        <a href="#" class="text-danger" data-bs-toggle="modal" data-bs-target="#codeOfConduct">
             Code of Conduct
-        </button> 
-        <a href="https://github.com/africa-wnb/rails-workshop.git" class="btn btn-primary" target="blank">Source Code</a>
+        </a>
+        |
+        <a href="https://github.com/africa-wnb/rails-workshop.git" class="text-danger" target="_blank">
+            Source Code
+        </a>
     </p>
     <p>&copy; 2025 Rails Girls Kilifi. All rights reserved.</p>
 </footer>
+
 <%= render 'shared/privacy_policy_modal' %>
 <%= render 'shared/code_of_conduct_modal' %>
